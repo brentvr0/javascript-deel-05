@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/opdracht%20formvalidatie.css">
+    <title>opdracht formvalidatie</title>
+</head>
+<body>
+<nav><a href="index.html">index</a></nav>
+<br><br>
+<form>
+    <div class="line">
+        <label for="txtVoornaam">Voornaam</label>
+        <input type="text" id="txtVoornaam" />
+        <span class="errorMessage" id="errVoornaam"></span>
+    </div>
+    <br>
+    <div class="line">
+        <label for="txtFamilienaam">Familienaam</label>
+        <input type="text" id="txtFamilienaam" required="required"/>
+        <span class="errorMessage" id="errFamilienaam"></span>
+    </div>
+    <br>
+    <div class="line">
+        <label for="txtGeboortedatum">geboortedatum </label>
+        <input type="date" id="txtGeboortedatum" required="required"/>
+        <span class="errorMessage" id="errGeboortedatum"></span>
+    </div>
+    <br>
+    <div class="line">
+        <label for="txtEmail">email </label>
+        <input type="email" id="txtEmail" required="required"/>
+        <span class="errorMessage" id="errEmail"></span>
+    </div>
+    <br>
+    <div class="line">
+        <label for="txtAantalKinderen">aantal kinderen </label>
+        <input type="number" id="txtAantalKinderen"/>
+        <span class="errorMessage" id="errAantalKinderen"></span>
+    </div>
+    <br><br>
+    <input type="submit" id="btnValideer" value="Valideer" />
+</form>
+
+<script type="text/javascript" charset="utf-8" src="scripts/opdracht%20formvalidatie.js"></script>
+</body>
+</html>
